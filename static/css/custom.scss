@@ -1,0 +1,226 @@
+/* Reset Rules */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+/* Mixing */
+@mixin title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* Navbar Styling */
+.nav-item {
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.dropdown-item {
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Top Navbar Styling */
+
+.navbarTop {
+  height: 60px;
+  line-height: 50px;
+}
+.navbarTopMenu{
+  text-align: right !important;
+  ul {
+    li {
+      list-style: none;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-size: 12px;
+      padding-right: 20px;
+      display: inline;
+      a {
+        text-decoration: none;
+        color: #000;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font-size: 12px; 
+      }
+    }
+  }
+}
+
+/* Category Page Styling */
+
+.my_cat_row {
+  padding-top: 15px;
+
+  .mx-auto {
+    p {
+      a {
+        color: #000;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      color: #000;
+      font-size: 12px;
+    }
+  }
+}
+
+.res_img {
+  width: 100%;
+  height: auto;
+}
+
+.cat_title {
+  @include title();
+}
+
+.res_img_pd {
+  padding-top: 5px;
+}
+
+.cat_mg {
+  margin-bottom: 10px;
+}
+.card-body {
+  h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+}
+
+/* Product Page Styling */
+.prod_row {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  .mx-auto {
+    p {
+      a {
+        color: #000;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      color: #000;
+      font-size: 12px;
+    }
+  }
+}
+
+.prod_title {
+  @include title();
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.prod_text {
+  padding-right: 20px;
+}
+
+/* Search Page Styling*/
+
+.search_text {
+  padding-top: 20px;
+}
+
+/* Cart Styling */
+.cart_table {
+  min-width: 400px;
+  font-size: 14px;
+}
+
+.cart_thead {
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0.2em;
+  background-color: #f8f9fa !important;
+}
+
+.cart_img {
+  width: 100px;
+  height: 100px;
+}
+
+.text-center {
+  .cart_a {
+    text-decoration: none;
+  }
+}
+
+.cart_icon {
+  text-decoration: none;
+  color: #868e96 !important;
+}
+
+.btnD1 {
+  margin-top: 5px;
+}
+
+.cart_title {
+  @include title();
+}
+
+/* Stripe */
+.stripe-button-el {
+  width: 100% !important;
+  display: block !important;
+  background-color: #868e96 !important;
+  border: 0px !important;
+  background-image: none !important;
+  span {
+    display: block;
+    position: relative;
+    padding: 0px 12px;
+    height: 36px !important;
+    line-height: 36px !important;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 16px;
+    color: #fff !important;
+    background-image: none !important;
+    background: none !important;
+  }
+}
+
+/* Order title */
+.order_title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* Signup Page Styling */
+.signup_title {
+  @include title();
+}
+
+/* Signin Page */
+.newcus {
+  margin-bottom: 20px !important;
+}
+
+.login_title {
+  @include title();
+}
+/* Form Styleing */
+.errorlist {
+  li {
+    color: #ff0000;
+    font-weight: bold;
+  }
+}
+
+/* Footer Styling */
+.my_footer {
+  background-color: #f8f9fa;
+  height: 60px;
+  p {
+    padding-top: 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+}

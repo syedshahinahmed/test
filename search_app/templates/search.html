@@ -1,0 +1,40 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block metadescription %} 
+We have a varity of Keto friendly products. Look for the one that suits your needs. 
+{% endblock %} 
+{% block title %} 
+Search - Keto World Store 
+{% endblock %} 
+{% block content %}
+<div>
+  <p class="text-center search_text">
+    You have searched for: <b>"{{ query }}"</b>
+  </p>
+</div>
+
+<div class="container">
+  <div class="row mx-auto">
+    {% for product in products %}
+    <div class="cat_mg col-9 col-sm-12 col-md-4 col-md-12 col-lg-4">
+      <div class="card text-center" style="min-width: 18rem;">
+        <a href="{{product.get_url}}"
+          ><img
+            class="card-img-top img-fluid"
+            src="{{product.image.url}}"
+            alt="{{product.name}}"
+        /></a>
+        <div class="card-body">
+          <h4>{{product.name}}</h4>
+          <p>€{{product.price}}</p>
+        </div>
+      </div>
+    </div>
+    {% empty %}
+    <div class="row mx-auto">
+        <p class="text-center search_text">0 results found.</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
